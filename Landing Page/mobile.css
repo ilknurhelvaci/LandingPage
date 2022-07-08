@@ -1,0 +1,18 @@
+#navbar{
+	flex-direction: column;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	overflow: hidden; /*Üstüne geldiğimizde oluşan taşmayı engellemek için */
+	height: 80px; 
+}
+#training .items{
+	flex-direction: column;
+}
+#training .items .item{
+	width: 100% /* 33% verdiğimiz için alt alta çirkin bir görüntü oluştu 100% vererek yazıların ekranı kaplamasını sağlıyoruz */
+	
+}
+#courses .course{
+	flex-direction: column; /*Böylelikle mobil ekranda kurslarımız yan yana değil
+	alt alta gözğkmüş olur */
+}

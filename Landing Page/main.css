@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+html{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+/*Navbar Section */
+#navbar{
+	color: #fff;
+	display: flex; /*yazıları yanyana getirmek için */
+	justify-content: space-between; /* list itemları ve başlığımızı birbirinden ayırmak için
+	kullandık ul ye margin-left:auto diyerek de aynısını elde etmiş oluruz; */
+	align-items: center;
+	padding: 0 0.75rem;
+	height: 70px;
+}
+#navbar ul{
+	list-style-type:none; /*listelerin yanındaki noktalar gitsin diye */
+	display: flex;
+	align-items: center;
+
+}
+#navbar ul li a{
+	padding: 0.5rem;
+}
+#navbar ul li a:hover{
+	background-color: #336ea2;
+	border-radius: 4px;
+}
+/*Home Section */
+#home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-bottom: 1px solid gray;
+}
+#home img{
+	max-width: 10%;
+	height: auto;
+	border-radius: 100%;
+	 /* heihgtı biliniyor olsaydı heihtı kadar yükseklik verilirdi 
+	ve tam oval olurdu bilinmediği için 100½ yaparak tam oval bir görüntü vermiş olduk */
+
+}
+#home .name h2{
+	margin-bottom: 0.75rem;
+}
+#home .name p{
+	opacity: 0.6;
+	font-style: italic;
+}
+/*
+Artık bu kodları global.css içinde yazdığımız için sistediğimiz yerde 
+kullanabiliriz böylelikle kod tekrarından kurtulmuş oluruz
+#home a{
+	margin-top: 1.25rem;
+	background: #336ea2;
+	padding: 0.8rem 3rem;
+	border-radius: 7px;
+	letter-spacing: 0.5px;
+}
+#home a:hover{
+	color: #336ea2 ;
+	background: white;
+	border:0.5px solid #336ea2;
+} */
+ /*Training */
+ #training{
+ 	color: white;
+ 	padding: 1rem;
+ }
+ #training .items{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+ #training .items .item{
+ 	width: 33%;
+ 	text-align: center;
+ 	padding: 0.5rem;
+ }
+ #training .items .item:hover{
+ color: red;
+ opacity: 0.6;
+ }
+ #courses {
+ 	color: #333;
+ 	padding: 1rem;
+ }
+ .courses{
+ 	display: flex;
+ 	flex-direction: column;
+ 	padding: 1rem;
+ }
+ .courses .course{
+ 	display: flex;
+ 	padding: 0.5rem;
+ 	margin-bottom: 0.5rem;
+ }
+ .courses .course .course-image{
+ 	margin-right: 0.5rem;
+ 	position: relative; /*Bizim position absolute özelliğini kullanmamız 
+ 	için kapsayıcının position relative olması gerekir */
+ }
+ .courses .course .course-image img{
+ 	border-radius: 5px;
+
+ }
+ .courses .course .course-image span{
+ 	background: red;
+ 	padding: 0.25rem;
+ 	color: #fff;
+ 	border-radius: 4px;
+ 	position:absolute; /*Kapsayıcımıza göre konum alacak */
+    top: 15px;
+    left: 0;
+ }
+ .courses .course .course-info .title{
+ 	letter-spacing: 1.2px;
+ 	font-weight: 700;
+ 	margin-bottom: 0.25rem;
+ }
+ .courses .course .course-info .description{
+ 	letter-spacing: 1.2px;
+ 	margin-bottom: 0.25rem;
+ 	opacity:0.6;
+ }
+ .courses .course .course-info .instructor{
+ 	font-size: 0.8rem;
+ 	margin-bottom: 0.25rem;
+ 	opacity: 0.6;
+ }
+ .courses .course .course-info .rating{
+ 	font-size: 0.8rem;
+ 	margin-bottom: 0.25rem;
+ 	opacity: 0.6;
+ }
+ /*Contact */
+ #contact{
+ 	color: #fff;
+ 	padding: 1rem;
+ }
+ #contact .contact-form{
+ 	max-width: 700px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: flex;
+ 	flex-direction: column;
+ 	
+ }
+ #contact .contact-form ul{
+ 	list-style-type: none;
+ 	display: flex;
+ 	margin-top: 1rem;
+ 	align-self: center; 
+ 	/*Eğer align items: center; deseydik bu defa formlarımıza verdiğimiz genişlik gidecekti
+ 	o yüzden bu şekilde kullanarak sadece ikonlarımızın ortalanmasını sağlayabiliriz */
+ }
+ #contact .contact-form ul li a{
+ 	padding: 1rem;
+ 	font-size: 2rem; /*İkonlarımızı büyülttük */
+ }
+ #contact .contact-form ul li a:hover{
+ 	opacity: 0.8;
+ }
